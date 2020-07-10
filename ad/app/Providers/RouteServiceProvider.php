@@ -32,7 +32,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-
+        Route::pattern('id', '[0-9]+');
         parent::boot();
     }
 

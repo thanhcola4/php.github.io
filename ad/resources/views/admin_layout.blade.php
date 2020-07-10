@@ -274,16 +274,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li><a href="grids.html">link game Null</a></li>
                     </ul>
                 </li>
-                 {{-- <li>
-                    <a href="fontawesome.html">
+                 <li >
+                    <a href="{{URL::to('/admin/infor/index')}}">
                         <i class="fa fa-bullhorn"></i>
-                        <span>Thể loại</span>
+                        <span>Thông tin game</span>
                     </a>              
-                <ul class="sub">
-                    <li><a href="typography.html">Null</a></li>
-                    <li><a href="glyphicon.html">Null</a></li>
-                    <li><a href="grids.html">Null</a></li>
-                </li> --}}
+         
+                </li> 
                  {{--<li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-th"></i>
@@ -359,55 +356,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--sidebar end-->
 <!--main content start-->
 <section id="main-content">
-	<section class="wrapper">
-		<!-- //market-->
-		<div class="market-updates">
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-2">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-eye"> </i>
-					</div>
-					 <div class="col-md-8 market-update-left">
-					 <h4>Khách Hàng</h4>
-					<h3>0</h3>
-					
-				  </div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-1">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-users" ></i>
-					</div>
-					<div class="col-md-8 market-update-left">
-					<h4>Người Dùng</h4>
-						<h3>0</h3>
-						
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-3 market-update-gd">
-				<div class="market-update-block clr-block-3">
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-					</div>
-					<div class="col-md-8 market-update-left">
-						<h4>Đơn đặt hàng</h4>
-						<h3>0</h3>
-						
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-            </div>
+@yield('admin_content')
             			
 </section>
 
  <!-- footer -->
 		  <div class="footer">
 			<div class="wthree-copyright">
-                    @yield('admin_content')
+                    @yield('admin_footer')
 			</div>
 		  </div>
   <!-- / footer -->
